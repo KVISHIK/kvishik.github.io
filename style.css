@@ -368,3 +368,74 @@ footer ul {
     font-size: 14px;
     font-weight: 400;
 }
+
+/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-**/
+
+/*tomato all*/
+
+.tomato-all{
+    background: url(img/t-all/bg.png);
+    height: 602px;
+     background-position: 0 -540px;
+    background-repeat: no-repeat;
+}
+
+.vrap{
+    background: #FFFFFF;
+}
+
+header .nav-t-al {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    width: 1150px;
+    padding: 20px;
+    margin: auto;
+    font-family: "Heebo", sans-serif;
+}
+
+header .nav-t-al a {
+    color: #324950;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 9px;
+
+}
+
+header .nav-t-al .menu-t-al a:hover {
+    border-bottom: 1px solid #324950;
+}
+
+header .nav-t-al li {
+    display: inline-block;
+}
+
+
+header .menu-t-al {
+    padding-bottom: 15px;
+    height: 100%;
+    text-align: right;
+    display: grid;
+    grid-template-rows: 1fr auto;
+
+}
+
+
+header .menu-t-al input {
+    width: 350px;
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+header label {
+    border-bottom: 1px solid #324950;
+    display: inline-block;
+    padding-bottom: 3px;
+}
+
+
+
+main{
+    background: #faeeee;
+    height: 200em;
+}
