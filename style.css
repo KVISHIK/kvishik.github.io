@@ -107,8 +107,7 @@ header label {
     display: flex;
     justify-content: space-between;
     margin: auto;
-    padding-top: 45px;
-    padding-bottom: 45px;
+    padding: 45px 20px 45px 20px;
 }
 
 .categories .categories-card img {
