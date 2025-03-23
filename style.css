@@ -119,7 +119,7 @@ header label {
 }
 
 .categories .categories-card img:hover {
-        transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .categories p {
@@ -128,7 +128,6 @@ header label {
     font-family: "Roboto Slab", serif;
     color: #324950;
 }
-
 
 
 /*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-**/
@@ -306,6 +305,7 @@ p.highlight {
 .activities-categories .activities-card {
     width: 290px;
 }
+
 .activities-card {
     opacity: 0;
     transition: all 0.9s ease-in-out;
@@ -315,7 +315,6 @@ p.highlight {
     opacity: 1;
     transform: translateX(0);
 }
-
 
 
 /*футер*/
@@ -336,13 +335,13 @@ footer .nav {
     align-items: center;
 }
 
-footer .nav a{
-transition-duration: 0.2s;
-}
-footer .nav a:hover{
-    color: #bababa;
+footer .nav a {
+    transition-duration: 0.2s;
 }
 
+footer .nav a:hover {
+    color: #bababa;
+}
 
 
 footer img {
@@ -351,7 +350,7 @@ footer img {
 }
 
 footer img:hover {
-        transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 footer ul {
@@ -373,14 +372,14 @@ footer ul {
 
 /*tomato all*/
 
-.tomato-all{
+.tomato-all {
     background: url(img/t-all/bg.png);
     height: 602px;
-     background-position: 0 -540px;
+    background-position: 0 -540px;
     background-repeat: no-repeat;
 }
 
-.vrap{
+.vrap {
     background: #FFFFFF;
 }
 
@@ -434,8 +433,183 @@ header label {
 }
 
 
-
-main{
+main {
     background: #faeeee;
-    height: 200em;
+}
+
+.content-t-al {
+    padding: 66px 0 50px 0;
+}
+
+/*tomato-hybrids*/
+
+
+.tomato-hybrids {
+    color: #324950;
+    font-family: "Roboto Slab", serif;
+    width: 1091px;
+    margin: auto;
+}
+
+.tomato-hybrids h2 {
+    font-size: 44px;
+    font-weight: 700;
+    margin-bottom: 45px;
+}
+
+.tomato-hybrids p {
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.tomato-hybrids .highlight {
+    margin-bottom: 48px;
+}
+
+.tomato-hybrids .text p {
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 39px;
+    line-height: 1.5em;
+}
+
+.tomato-hybrids .text {
+    width: 1092px;
+}
+
+.tomato-hybrids span {
+    font-weight: 700;
+}
+
+.tomato-hybrids .description {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    line-height: 1.5em;
+}
+
+.tomato-hybrids .description .line {
+    width: 4px;
+    height: 40px;
+    background-color: #e35252;
+    margin-right: 20px;
+    border-radius: 4px;
+}
+
+
+/*breeding-info*/
+
+.breeding-info {
+    font-family: "Roboto Slab", serif;
+    color: #324950;
+    margin: auto;
+    max-width: 1152px;
+}
+
+.breeding-info .container {
+    display: flex;
+    background: #FFFAFA;
+    padding: 58px 22px 58px 22px;
+    gap: 33px;
+    margin-bottom: 40px;
+}
+
+.breeding-info .container .breeding-card {
+    width: 334px;
+}
+
+.breeding-info .container .breeding-card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 22px;
+    line-height: 1.43em;
+}
+
+.breeding-info .container .breeding-card p {
+    border-top: 1px solid #324950;
+    font-size: 17px;
+    font-weight: 400;
+    padding-top: 22px;
+    line-height: 1.5em;
+}
+
+
+.breeding-info .container .breeding-card span {
+    font-weight: 700;
+}
+
+.breeding-info .description {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+/*variety-catalog*/
+
+.variety-catalog {
+    width: 1110px;
+    margin: auto;
+    font-family: "Roboto Slab", serif;
+    color: #57984C;
+    text-align: center;
+}
+
+.variety-catalog .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+
+.variety-catalog .description {
+    display: flex;
+    align-items: center;
+    color: #324950;
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.variety-catalog .description .line {
+    width: 3px;
+    height: 40px;
+    background-color: #e35252;
+    margin-right: 20px;
+    border-radius: 4px;
+}
+
+.variety-catalog .tomato-card {
+    overflow: hidden;
+    position: relative;
+    background: #FFFFFF;
+    width: 350px;
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+
+.variety-catalog .tomato-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.variety-catalog .tomato-card h3{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+.variety-catalog .tomato-card p{
+    font-size: 16px;
+    font-weight: 400;
+}
+.variety-catalog .tomato-card .container {
+    overflow: hidden;
+}
+
+.variety-catalog .tomato-card img {
+    width: 350px;
+    height: 252px;
+    object-fit: cover;
+    transform: scale(1.1);
+}
+
+.variety-catalog .tomato-card .text{
+    padding: 15px 0 15px;
 }
