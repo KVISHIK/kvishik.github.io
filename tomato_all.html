@@ -180,5 +180,19 @@
 <div class="copy">
     <p>AGRIDERA SEEDS & AGRICULTURE LTD. © 2020</p>
 </div>
+
+<script>
+    const breeding = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    });
+
+    document.querySelectorAll('.breeding-card').forEach(block => {
+        breeding.observe(block);
+    });
+</script>
 </body>
 </html>

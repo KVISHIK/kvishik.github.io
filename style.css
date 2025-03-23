@@ -504,8 +504,17 @@ main {
     color: #324950;
     margin: auto;
     max-width: 1152px;
+    overflow: hidden;
 }
-
+.breeding-card{
+    opacity: 0;
+    transform: translateY(50%);
+    transition: all 0.5s ease-in-out;
+}
+.breeding-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
 .breeding-info .container {
     display: flex;
     background: #FFFAFA;
