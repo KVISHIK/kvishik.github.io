@@ -17,8 +17,7 @@ a {
 /*Хедер*/
 
 header {
-    background: url(img/bg.jpg);
-    height: 850px;
+
 }
 
 header nav {
@@ -99,8 +98,14 @@ header label {
     border: none;
 }
 
+.home {
+    height: 850px;
+    background: url(img/bg.jpg);
+}
+
 /*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-**/
 /*Категории*/
+
 
 .categories {
     max-width: 1590px;
@@ -433,12 +438,9 @@ header label {
 }
 
 
-main {
-    background: #faeeee;
-}
-
 .content-t-al {
     padding: 66px 0 50px 0;
+    background: #faeeee;
 }
 
 /*tomato-hybrids*/
@@ -506,15 +508,18 @@ main {
     max-width: 1152px;
     overflow: hidden;
 }
-.breeding-card{
+
+.breeding-card {
     opacity: 0;
     transform: translateY(50%);
     transition: all 0.5s ease-in-out;
 }
+
 .breeding-card.visible {
     opacity: 1;
     transform: translateY(0);
 }
+
 .breeding-info .container {
     display: flex;
     background: #FFFAFA;
@@ -595,19 +600,22 @@ main {
     transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
 }
 
-.variety-catalog .tomato-card:hover{
+.variety-catalog .tomato-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
-.variety-catalog .tomato-card h3{
+
+.variety-catalog .tomato-card h3 {
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 7px;
 }
-.variety-catalog .tomato-card p{
+
+.variety-catalog .tomato-card p {
     font-size: 16px;
     font-weight: 400;
 }
+
 .variety-catalog .tomato-card .container {
     overflow: hidden;
 }
@@ -619,6 +627,161 @@ main {
     transform: scale(1.1);
 }
 
-.variety-catalog .tomato-card .text{
+.variety-catalog .tomato-card .text {
     padding: 15px 0 15px;
 }
+
+/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-**/
+
+/*tomato-one*/
+
+.tomato-one {
+    background: none;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+
+.content-t-one {
+    background: #f5f5f5;
+    background-image: url("img/t-one/union.png");
+    background-position: 200px -51px;
+    background-repeat: no-repeat;
+    font-family: "Roboto Slab", serif;
+    padding: 26px 0 150px 0;
+}
+
+.content-t-one .wrap-a {
+    color: #57984c;
+    margin-bottom: 45px;
+}
+
+
+/*info*/
+
+.content-t-one .info {
+    display: flex;
+    margin-bottom: 80px;
+}
+
+.content-t-one .container {
+    width: 1110px;
+    margin: auto;
+
+}
+
+.content-t-one .info .title {
+
+}
+
+.content-t-one .info .title h1 {
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 1.43em;
+    color: #324950;
+    margin-bottom: 48px;
+}
+
+.content-t-one .info .title span {
+    color: #57984c;
+}
+
+.content-t-one .info .wrap {
+    display: flex;
+    align-items: center;
+    color: #cf2333;
+    font-size: 34px;
+    font-weight: 700;
+    gap: 31px;
+}
+
+.content-t-one .info .wrapper-img {
+    text-align: right;
+}
+
+.content-t-one .info .wrapper-img .wrap {
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.content-t-one .info .wrapper-img button {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    height: 55px;
+    width: 225px;
+    color: #57984c;
+    font-size: 17px;
+    font-weight: 700;
+    border: 1px solid #57984c;
+    border-radius: 60px;
+    line-height: 55px;
+    gap: 20px;
+    background: none;
+}
+
+.content-t-one .info .wrapper-img .wrap img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    transform: scale(1.1);
+}
+
+/*characteristics*/
+.content-t-one .characteristics .container .wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 42px 174px;
+}
+
+
+.content-t-one .characteristics h3 {
+    width: 189px;
+    color: #57984c;
+    border-bottom: 1px solid #57984c;
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 18px;
+}
+
+.content-t-one .characteristics .container .wrap  li {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 2em;
+    color: #324950;
+}
+
+
+.content-t-one .characteristics .container .wrap  li::before {
+    content: "•";
+    color: #57984c;
+    font-size: 24px;
+    margin-right: 8px;
+}
+
+.content-t-one .container .characteristics {
+    line-height: 1.63em;
+    color: #324950;
+}
+
+.content-t-one .container .characteristics span {
+    font-weight: 700;
+
+}
+
+.content-t-one .container .characteristics {
+
+}
+
+.content-t-one .wrap-ul {
+    padding-top: 30px;
+}
+
+
+.content-t-one .container .characteristics {
+    position: absolute;
+    top: 73%;
+}
+
