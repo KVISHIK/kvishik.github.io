@@ -144,5 +144,18 @@
     <p>AGRIDERA SEEDS & AGRICULTURE LTD. © 2020</p>
 </div>
 
+<script>
+    const sticker = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    });
+
+    document.querySelectorAll('.info .title .wrap').forEach(block => {
+        sticker.observe(block);
+    });
+</script>
 </body>
 </html>

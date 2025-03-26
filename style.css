@@ -655,7 +655,9 @@ header label {
     color: #57984c;
     margin-bottom: 45px;
 }
-
+.content-t-one .wrap-a:hover{
+    color: #407137;
+}
 
 /*info*/
 
@@ -785,3 +787,13 @@ header label {
     top: 73%;
 }
 
+.info .title .wrap {
+    opacity: 0;
+    transform: translateX(-20%);
+    transition: all 0.5s ease-in-out;
+}
+
+.info .title .wrap.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
