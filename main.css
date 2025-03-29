@@ -1,5 +1,5 @@
 @media (max-width: 1180px) {
-    header nav, .vrap .nav-t-al{
+    header nav, .vrap .nav-t-al {
         width: 90%;
 
     }
@@ -15,32 +15,39 @@
     }
 }
 
-@media (max-width: 1113px){
-.content-t-al .tomato-hybrids h2{
-font-size: 39px;
-    margin-bottom: 30px;
-}
-    .content-t-al .tomato-hybrids p{
+@media (max-width: 1113px) {
+    .content-t-al .tomato-hybrids h2 {
+        font-size: 39px;
+        margin-bottom: 30px;
+    }
+
+    .content-t-al .tomato-hybrids p {
         font-size: 15px;
         width: 90%;
     }
-    .breeding-info .container .breeding-card  h3{
+
+    .breeding-info .container .breeding-card h3 {
         font-size: 18px;
         margin-bottom: 18px;
     }
-    .breeding-info .container .breeding-card br{
+
+    .breeding-info .container .breeding-card br {
         display: none;
     }
-    .breeding-info .container .breeding-card p{
+
+    .breeding-info .container .breeding-card p {
         font-size: 15px;
     }
-.variety-catalog p{
-    font-size: 15px;
-}
-    .variety-catalog .description .line{
+
+    .variety-catalog p {
+        font-size: 15px;
+    }
+
+    .variety-catalog .description .line {
         margin-right: 10px;
         margin-left: 10px;
     }
+
     .variety-catalog .container {
         grid-template-columns: 1fr auto;
         column-gap: 0;
@@ -97,7 +104,7 @@ font-size: 39px;
         font-size: 13px;
     }
 
-    footer .nav img{
+    footer .nav img {
         height: 25px;
         width: 25px;
     }
@@ -106,34 +113,43 @@ font-size: 39px;
         justify-content: normal;
         gap: 10px;
     }
-    .content-t-al .tomato-hybrids{
+
+    .content-t-al .tomato-hybrids {
         padding-left: 40px;
     }
-    .content-t-al .tomato-hybrids h2{
+
+    .content-t-al .tomato-hybrids h2 {
         font-size: 35px;
         margin-bottom: 30px;
     }
-    .content-t-al .tomato-hybrids p{
+
+    .content-t-al .tomato-hybrids p {
         font-size: 14px;
         width: 85%;
     }
-    .breeding-info .container .breeding-card  h3{
+
+    .breeding-info .container .breeding-card h3 {
         font-size: 18px;
         margin-bottom: 18px;
     }
-    .breeding-info .container .breeding-card br{
+
+    .breeding-info .container .breeding-card br {
         display: none;
     }
-    .breeding-info .container .breeding-card p{
+
+    .breeding-info .container .breeding-card p {
         font-size: 15px;
     }
-    .variety-catalog p{
+
+    .variety-catalog p {
         font-size: 15px;
     }
-    .variety-catalog .description .line{
+
+    .variety-catalog .description .line {
         margin-right: 10px;
         margin-left: 10px;
     }
+
     .variety-catalog .container {
         grid-template-columns: 1fr auto;
         column-gap: 0;
@@ -154,81 +170,101 @@ font-size: 39px;
     .categories .categories-card:nth-child(3n + 1):last-child {
         grid-column: 2 / 3;
     }
-    .categories .categories-card img{
+
+    .categories .categories-card img {
 
     }
-    .categories .categories-card p{
+
+    .categories .categories-card p {
         font-size: 17px;
     }
 
-    .activities{
+    .activities {
         padding: 40px;
     }
-    .activities h2{
+
+    .activities h2 {
         font-size: 40px;
         margin-bottom: 25px;
     }
 
-    .activities .activities-categories .activities-card h3{
+    .activities .activities-categories .activities-card h3 {
         font-size: 18px;
         padding-bottom: 18px;
     }
-    .activities .activities-categories .activities-card p{
+
+    .activities .activities-categories .activities-card p {
         font-size: 15px;
     }
-    .activities .activities-categories .activities-card img{
+
+    .activities .activities-categories .activities-card img {
         width: 260px;
         height: 220px;
     }
-    .activities .highlight{
+
+    .activities .highlight {
         margin-bottom: 15px;
     }
 }
-@media (max-width: 959px){
-    .content-t-al .tomato-hybrids{
+
+@media (max-width: 959px) {
+    .content-t-al .tomato-hybrids {
         padding-left: 20px;
     }
-    .content-t-al .tomato-hybrids h2{
-        font-size: 35px;
+
+    .content-t-al .tomato-hybrids h2 {
+        font-size: 30px;
         margin-bottom: 30px;
     }
-    .content-t-al .tomato-hybrids p{
+
+    .content-t-al .tomato-hybrids p {
         font-size: 14px;
-        width: 85%;
+        width: 55%;
+        margin-bottom: 30px;
     }
-    .breeding-info .container .breeding-card  h3{
+
+    .breeding-info .container .breeding-card h3 {
         font-size: 18px;
         margin-bottom: 18px;
     }
-    .breeding-info .container .breeding-card br{
+
+    .breeding-info .container .breeding-card br {
         display: none;
     }
-    .breeding-info .container .breeding-card p{
+
+    .breeding-info .container .breeding-card p {
         font-size: 15px;
     }
-    .variety-catalog p{
+
+    .variety-catalog p {
         font-size: 15px;
     }
-    .variety-catalog .description .line{
+
+    .variety-catalog .description .line {
         margin-right: 10px;
         margin-left: 10px;
     }
-    .variety-catalog{
-        width: 900px;
+
+    .variety-catalog {
+        width: 740px;
     }
+
     .variety-catalog .container {
 
-       margin-left: 0;
-       max-width:740px;
+        margin-left: 20px;
+        max-width: 740px;
     }
-    .variety-catalog .container .tomato-card .container{
+
+    .variety-catalog .container .tomato-card .container {
         margin-left: 0;
     }
 }
+
 @media (max-width: 939px) {
-    .vision-mission{
+    .vision-mission {
         padding: 51px 0 80px 0;
     }
+
     .vision-mission img {
         height: 350px;
         width: 350px;
@@ -237,25 +273,30 @@ font-size: 39px;
     .vision-mission .vision {
         width: 880px;
     }
-    .vision-mission .vision p{
+
+    .vision-mission .vision p {
         font-size: 18px;
     }
+
     .vision-mission .mission h2 {
-       font-size: 49px;
+        font-size: 49px;
         margin-bottom: 30px;
     }
 
     .vision-mission .mission {
         width: 880px;
     }
-    .vision-mission .mission p{
+
+    .vision-mission .mission p {
         font-size: 18px;
     }
-    .vision-mission .vision h2{
+
+    .vision-mission .vision h2 {
         font-size: 49px;
         margin-bottom: 30px;
     }
-    .vision-mission .highlight{
+
+    .vision-mission .highlight {
         margin-bottom: 18px;
     }
 
@@ -263,39 +304,47 @@ font-size: 39px;
         width: 100%;
 
     }
-    .hero h1{
+
+    .hero h1 {
         font-size: 40px;
 
     }
 }
 
-@media (max-width: 897px){
-    .activities{
+@media (max-width: 897px) {
+    .activities {
         padding: 30px;
     }
-    .activities h2{
+
+    .activities h2 {
         font-size: 35px;
         margin-bottom: 20px;
     }
-    .activities .activities-categories .activities-card h3{
+
+    .activities .activities-categories .activities-card h3 {
         font-size: 15px;
         padding-bottom: 14px;
     }
-    .activities .activities-categories .activities-card p{
+
+    .activities .activities-categories .activities-card p {
         font-size: 13px;
     }
-    .activities .activities-categories .activities-card img{
+
+    .activities .activities-categories .activities-card img {
         width: 240px;
         height: 200px;
     }
-    .activities .highlight{
+
+    .activities .highlight {
         margin-bottom: 15px;
     }
-    .activities .activities-categories{
+
+    .activities .activities-categories {
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
         gap: 18px 0;
     }
+
     .activities .activities-categories .activities-card:nth-child(3):last-child {
         grid-column: span 2;
         justify-self: center;
@@ -307,7 +356,7 @@ font-size: 39px;
         font-size: 12px;
     }
 
-    footer .nav img{
+    footer .nav img {
         height: 22px;
         width: 22px;
     }
@@ -317,44 +366,46 @@ font-size: 39px;
         gap: 10px;
     }
 
-    .copy p{
+    .copy p {
         font-size: 12px;
     }
 
-    header nav , .vrap .nav-t-al{
+    header nav, .vrap .nav-t-al {
         width: 90%;
 
     }
-    header nav a, .vrap .nav-t-al a{
+
+    header nav a, .vrap .nav-t-al a {
         font-size: 14px;
     }
 
-    header nav a img, .vrap .nav-t-al a img{
+    header nav a img, .vrap .nav-t-al a img {
         height: 103px;
         width: 216px;
     }
 
-    
 
 }
-
 
 
 @media (max-width: 887px) {
     header .menu-btn {
         display: block;
     }
-    header .menu, .vrap .nav-t-al .menu-t-al{
+
+    header .menu, .vrap .nav-t-al .menu-t-al {
         display: none;
     }
-    header .menu.active, .vrap .nav-t-al .menu-t-al.active{
+
+    header .menu.active, .vrap .nav-t-al .menu-t-al.active {
         display: block;
     }
 
-    .vision-mission{
+    .vision-mission {
         padding: 40px 0 69px 0;
 
     }
+
     .vision-mission img {
         height: 300px;
         width: 300px;
@@ -365,9 +416,11 @@ font-size: 39px;
         width: 400px;
         flex-direction: column-reverse;
     }
-    .vision-mission .vision p{
+
+    .vision-mission .vision p {
         font-size: 15px;
     }
+
     .vision-mission .mission h2 {
         font-size: 35px;
         margin-bottom: 30px;
@@ -377,17 +430,21 @@ font-size: 39px;
         width: 400px;
         flex-direction: column;
     }
-    .vision-mission .mission p{
+
+    .vision-mission .mission p {
         font-size: 15px;
     }
-    .vision-mission .vision h2{
+
+    .vision-mission .vision h2 {
         font-size: 35px;
         margin-bottom: 30px;
     }
-    .vision-mission .highlight{
+
+    .vision-mission .highlight {
         margin-bottom: 18px;
     }
-.hero{
+
+    .hero {
         padding: 220px 0;
     }
 
@@ -400,10 +457,37 @@ font-size: 39px;
         gap: 20px;
     }
 
+}
+
+@media (max-width: 831px) {
+    .variety-catalog .container {
+        grid-template-columns: auto;
+        margin-left: 180px;
+        max-width: 740px;
     }
+}
 
 @media (max-width: 632px) {
-    .activities .activities-categories{
+    .activities .activities-categories {
+        display: block;
+    }
+    .variety-catalog .container {
+        margin-left: 40px;
+    }
+    .content-t-al .tomato-hybrids {
+        padding-left: 10px;
+    }
+    .content-t-al .tomato-hybrids h2 {
+        font-size: 24px;
+        margin-bottom: 28px;
+    }
+
+    .content-t-al .tomato-hybrids p {
+        font-size: 14px;
+        width: 29%;
+        margin-bottom: 26px;
+    }
+    .content-t-al .tomato-hybrids br{
         display: block;
     }
 }

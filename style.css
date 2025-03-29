@@ -521,7 +521,9 @@ header label {
 
 /*tomato-hybrids*/
 
-
+.content-t-al .tomato-hybrids br{
+    display: none;
+}
 .tomato-hybrids {
     color: #324950;
     font-family: "Roboto Slab", serif;
