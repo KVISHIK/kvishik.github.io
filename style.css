@@ -529,6 +529,7 @@ header label {
     font-family: "Roboto Slab", serif;
     width: 1091px;
     margin: auto;
+    overflow: hidden;
 }
 
 .tomato-hybrids h2 {

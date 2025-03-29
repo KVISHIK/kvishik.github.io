@@ -59,7 +59,10 @@
 }
 
 @media (max-width: 1114px) {
-
+.variety-catalog{
+    width: 740px;
+    overflow: hidden;
+}
     .vision-mission {
 
     }
@@ -156,6 +159,15 @@
         max-width: 740px;
         width: 100%;
         margin: auto;
+        overflow: hidden;
+    }
+    .variety-catalog .container a{
+        overflow: hidden;
+    }
+    .content-t-al .tomato-hybrids {
+        overflow: hidden;
+         width: 95%;
+        margin: 0;
     }
 }
 
@@ -209,6 +221,7 @@
 
 @media (max-width: 959px) {
     .content-t-al .tomato-hybrids {
+        overflow: hidden;
         padding-left: 20px;
     }
 
@@ -217,10 +230,14 @@
         margin-bottom: 30px;
     }
 
-    .content-t-al .tomato-hybrids p {
+    .content-t-al .tomato-hybrids .text p {
+
         font-size: 14px;
         width: 55%;
         margin-bottom: 30px;
+    }
+    .content-t-al .tomato-hybrids .text{
+
     }
 
     .breeding-info .container .breeding-card h3 {
@@ -456,7 +473,9 @@
         align-items: center;
         gap: 20px;
     }
-
+    .tomato-all {
+        background-position: -350px -540px;
+    }
 }
 
 @media (max-width: 831px) {
@@ -471,8 +490,18 @@
     .activities .activities-categories {
         display: block;
     }
+
     .variety-catalog .container {
-        margin-left: 40px;
+        margin-left: 10px;
+        width: 350px;
+    }
+    .variety-catalog .container a{
+        width: 350px;
+    }
+    .variety-catalog .description{
+        text-align: left;
+        width: 350px;
+        margin-bottom: 20px;
     }
     .content-t-al .tomato-hybrids {
         padding-left: 10px;
@@ -482,12 +511,25 @@
         margin-bottom: 28px;
     }
 
-    .content-t-al .tomato-hybrids p {
+    .content-t-al .tomato-hybrids .text p {
         font-size: 14px;
         width: 29%;
         margin-bottom: 26px;
     }
     .content-t-al .tomato-hybrids br{
         display: block;
+    }
+    .content-t-al .tomato-hybrids .text{
+        overflow: hidden;
+    }
+    .content-t-al .variety-catalog{
+        width: 350px;
+    }
+    .breeding-info .container{
+        display: block;
+
+    }
+    .breeding-info .container .breeding-card{
+        margin-bottom: 50px;
     }
 }
