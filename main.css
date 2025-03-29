@@ -134,6 +134,7 @@
 }
 
 @media (max-width: 1075px) {
+
     .vision-mission img {
         height: 400px;
         width: 400px;
@@ -270,7 +271,20 @@
     }
 
 }
+@media (max-width: 1024px){
+    .tomato-all,.contact {
 
+        height: 302px;
+        background-size: 100% auto;
+        background-position: center -80px;
+        background-repeat: no-repeat;
+
+    }
+    .content-t-al .tomato-hybrids p.highlight{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
 @media (max-width: 959px) {
     .content-t-al .tomato-hybrids {
         overflow: hidden;
@@ -527,11 +541,44 @@
         gap: 20px;
     }
 
-    .tomato-all {
-        background-position: -350px -540px;
-    }
+
     .content-con .container .contact-for{
         width: 85%;
+    }
+    .wrap-nav {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-template-rows: auto auto; /* Две строки */
+        grid-template-areas:
+        "logo menu"
+        "search search"; /* Третий элемент внизу по центру */
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .wrap-nav a {
+        grid-area: logo;
+    }
+
+    .menu-btn {
+        grid-area: menu;
+    }
+
+    .w-in {
+        grid-area: search;
+        display: flex;
+        justify-content: center; /* Центрируем по горизонтали */
+        margin-top: 20px; /* Отступ сверху */
+    }
+
+    .wrap-nav input {
+        width: 200px;
+        border: none;
+        background: transparent;
+        outline: none;
+        margin-top: 30px;
+
     }
 }
 
@@ -658,6 +705,17 @@
         margin: 0;
         margin-left: 10px;
     }
+    .tomato-all,.contact {
+        background-position: center -20px;
+    }
+    .contact {
+        background-position: center 60px;
+    }
+}
+@media (max-width: 496px){
+    .tomato-all,.contact {
+        background-position: center 40px;
+    }
 }
 @media (max-width: 429px){
     .content-con .container .contact-form textarea{
@@ -671,5 +729,19 @@
     }
     .content-con .container .contact-for{
 
+    }
+    .tomato-all{
+        background-position: center 100px;
+    }
+    .contact {
+        background-position: center 120px;
+    }
+    .content-t-al .tomato-hybrids .text p{
+        width: 24%;
+    }
+    footer ul{
+        display:block ;
+        line-height: 1.5em;
+        font-size: 12px;
     }
 }

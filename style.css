@@ -96,6 +96,11 @@ header {
 
 }
 
+
+.w-in{
+    display: none;
+}
+
 header nav {
     display: grid;
     grid-template-columns: 1fr auto;
@@ -456,6 +461,7 @@ footer ul {
 .tomato-all {
     background: url(img/t-all/bg.png);
     height: 602px;
+    background-size: auto;
     background-position: 0 -540px;
     background-repeat: no-repeat;
 }
