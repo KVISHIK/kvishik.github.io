@@ -498,7 +498,7 @@
 
     .vision-mission .vision {
         width: 400px;
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     .vision-mission .vision p {
@@ -512,11 +512,14 @@
 
     .vision-mission .mission {
         width: 400px;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .vision-mission .mission p {
         font-size: 15px;
+    }
+    .vision-mission .text{
+        margin-bottom: 20px;
     }
 
     .vision-mission .vision h2 {
@@ -548,10 +551,10 @@
     .wrap-nav {
         display: grid;
         grid-template-columns: 1fr auto;
-        grid-template-rows: auto auto; /* Две строки */
+        grid-template-rows: auto auto;
         grid-template-areas:
         "logo menu"
-        "search search"; /* Третий элемент внизу по центру */
+        "search search";
         align-items: center;
         justify-content: space-between;
         text-align: center;
@@ -568,8 +571,8 @@
     .w-in {
         grid-area: search;
         display: flex;
-        justify-content: center; /* Центрируем по горизонтали */
-        margin-top: 20px; /* Отступ сверху */
+        justify-content: center;
+        margin-top: 20px;
     }
 
     .wrap-nav input {
@@ -579,6 +582,9 @@
         outline: none;
         margin-top: 30px;
 
+    }
+    .vision-mission .text {
+        text-align: center;
     }
 }
 
@@ -712,9 +718,19 @@
         background-position: center 60px;
     }
 }
+
+@media (max-width: 552px){
+
+    .categories{
+        display: block;
+    }
+}
 @media (max-width: 496px){
     .tomato-all,.contact {
         background-position: center 40px;
+    }
+    .vision-mission .text{
+        text-align: center;
     }
 }
 @media (max-width: 429px){
@@ -743,5 +759,26 @@
         display:block ;
         line-height: 1.5em;
         font-size: 12px;
+    }
+}
+
+@media (max-width: 429px){
+    .vision-mission{
+
+    }
+    .vision-mission .text{
+        width: 80%;
+    }
+    .vision-mission .vision{
+        margin-bottom: 30px;
+        width: 320px;
+
+    }
+    .vision-mission img {
+        height: 250px;
+        width: 250px;
+    }
+    .vision-mission .mission{
+        width: 320px;
     }
 }
