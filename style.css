@@ -15,7 +15,83 @@ a {
 /*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-**/
 
 /*Хедер*/
+.menu-btn {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
 
+.nav-phone {
+    position: fixed;
+    width: 100%;
+    height: 3000px;
+    background: rgba(0, 0, 0, 0.66);
+    z-index: 10;
+    display: none;
+}
+
+.nav-phone.active {
+    display: block;
+}
+
+.nav-phone .menu {
+    width: 100%;
+    padding: 20px;
+}
+
+.nav-phone .menu ul {
+    padding: 0;
+    margin: 0;
+}
+
+.nav-phone .menu li {
+    padding: 10px;
+    border-bottom: 1px solid #c5c5c5;
+}
+
+.nav-phone .menu a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.nav-phone .menu input {
+    width: 190px;
+    color: black;
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+.nav-phone .menu label {
+    border-bottom: 1px solid #ffffff;
+    display: inline-block;
+    padding-bottom: 3px;
+    margin-bottom: 30px;
+}
+
+.nav-phone .menu img {
+    filter: invert(100%);
+}
+
+.nav-phone .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.nav-phone .close-btn svg {
+    width: 24px;
+    height: 24px;
+    fill: white;
+}
+
+
+/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-**/
 header {
 
 }
@@ -655,7 +731,8 @@ header label {
     color: #57984c;
     margin-bottom: 45px;
 }
-.content-t-one .wrap-a:hover{
+
+.content-t-one .wrap-a:hover {
     color: #407137;
 }
 
@@ -748,7 +825,7 @@ header label {
     padding-bottom: 18px;
 }
 
-.content-t-one .characteristics .container .wrap  li {
+.content-t-one .characteristics .container .wrap li {
     font-size: 17px;
     font-weight: 400;
     line-height: 2em;
@@ -756,7 +833,7 @@ header label {
 }
 
 
-.content-t-one .characteristics .container .wrap  li::before {
+.content-t-one .characteristics .container .wrap li::before {
     content: "•";
     color: #57984c;
     font-size: 24px;
@@ -799,28 +876,31 @@ header label {
 }
 
 
-
 /*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-**/
 
 
-.contact{
+.contact {
     background: url("img/contact/bg.png");
     height: 602px;
 
 }
-.content-con .container .highlight{
+
+.content-con .container .highlight {
     margin-bottom: 58px;
 }
+
 .content-con .container {
     background: #f5f5f5;
     padding: 68px 0 50px 0;
     font-family: "Roboto Slab", serif;
 }
-.content-con .container .contact-for{
+
+.content-con .container .contact-for {
     width: 900px;
     margin: auto;
 }
-.content-con .container .contact-for h1{
+
+.content-con .container .contact-for h1 {
     color: #324950;
     font-size: 44px;
     font-weight: 700;
@@ -845,7 +925,7 @@ header label {
     display: block;
 }
 
-.content-con .container .contact-form p{
+.content-con .container .contact-form p {
     margin-bottom: 17px;
     color: #324950;
     font-size: 17px;
@@ -853,31 +933,31 @@ header label {
     font-family: "Roboto Slab", serif;
 }
 
-.content-con .container .contact-form input{
+.content-con .container .contact-form input {
     width: 351px;
     height: 55px;
     border-radius: 10px;
     border: 1px solid #DADADA;
     box-sizing: border-box;
     margin-bottom: 27px;
-    padding:10px;
+    padding: 10px;
     color: #324950;
     font-size: 17px;
 }
 
-.content-con .container .contact-form textarea{
+.content-con .container .contact-form textarea {
     width: 633px;
     height: 390px;
     border-radius: 10px;
     border: 1px solid #DADADA;
     box-sizing: border-box;
     margin-bottom: 27px;
-    padding:10px;
+    padding: 10px;
     color: #324950;
     font-size: 17px;
 }
 
-.content-con .container .contact-form select{
+.content-con .container .contact-form select {
     height: 55px;
     width: 635px;
     border-radius: 10px;
@@ -888,6 +968,7 @@ header label {
     color: #324950;
     font-size: 17px;
 }
+
 .content-con .container .contact-form .other-input {
     width: 635px;
     height: 55px;
@@ -895,24 +976,26 @@ header label {
     border: 1px solid #DADADA;
     color: #324950;
     font-size: 17px;
-    padding:10px;
-}
-.content-con .container .contact-form .small-input{
-    width: 225px;
-    padding:10px;
+    padding: 10px;
 }
 
-.content-con .container .contact-form .wrap-captcha{
+.content-con .container .contact-form .small-input {
+    width: 225px;
+    padding: 10px;
+}
+
+.content-con .container .contact-form .wrap-captcha {
     display: flex;
     gap: 27px;
 }
-.content-con .container .contact-form .wrap-captcha img{
+
+.content-con .container .contact-form .wrap-captcha img {
     width: 99px;
     height: 27px;
     margin-top: 15px;
 }
 
-.content-con .container .contact-form .wrap-captcha button{
+.content-con .container .contact-form .wrap-captcha button {
     background: #57984C;
     color: #FFFFFF;
     font-size: 17px;
@@ -924,10 +1007,10 @@ header label {
     flex-shrink: 0;
     transition: background 0.3s ease;
 }
-.content-con .container .contact-form .wrap-captcha button:hover{
+
+.content-con .container .contact-form .wrap-captcha button:hover {
     background: #457A3A;
 }
-
 
 
 /*our-address*/
@@ -938,7 +1021,7 @@ header label {
     text-align: center;
 }
 
-.content-con .our-address h1{
+.content-con .our-address h1 {
     color: #57984c;
     width: 183px;
     border-bottom: 1px solid #57984C;
@@ -947,13 +1030,14 @@ header label {
     font-weight: 700;
     padding-bottom: 18px;
 }
-.content-con .our-address .text{
+
+.content-con .our-address .text {
     margin-top: 24px;
     line-height: 1.5em;
     font-size: 17px;
     font-weight: 400;
 }
 
-.content-con .our-address .text span{
+.content-con .our-address .text span {
     color: #57984c;
 }

@@ -12,13 +12,39 @@
     <link rel="icon" href="img/logo.png" type="image/png">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
     <title>Tomato</title>
 </head>
 <body>
+<div class="nav-phone">
+    <div class="menu">
+        <div class="close-btn">
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                <path d="M18.36 5.64a1 1 0 0 0-1.41 0L12 9.59 7.05 4.64a1 1 0 0 0-1.41 1.41L10.59 12l-4.95 4.95a1 1 0 0 0 1.41 1.41L12 14.41l4.95 4.95a1 1 0 0 0 1.41-1.41L13.41 12l4.95-4.95a1 1 0 0 0 0-1.41z"/>
+            </svg>
+        </div>
+        <div class="">
+            <label>
+                <input type="text" placeholder="Search">
+                <img src="img/ico_search.png" alt="Search">
+            </label>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">Company Profile</a></li>
+            <li><a href="tomato_all.html">Products</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">R & D</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+</div>
 <header class="tomato-all">
     <div class="vrap">
         <div class="nav-t-al">
             <a href="index.html"><img src="img/logo.png" alt="logo"> </a>
+            <button class="menu-btn" style="color: black" >☰</button>
             <div class="menu-t-al">
                 <div class="">
                     <label>
@@ -209,6 +235,18 @@
 
     document.querySelectorAll('.breeding-card').forEach(block => {
         breeding.observe(block);
+    });
+    document.addEventListener("DOMContentLoaded", function () {
+        const menuBtn = document.querySelector("header .menu-btn");
+        const menu = document.querySelector(".nav-phone");
+
+        menuBtn.addEventListener("click", function () {
+            menu.classList.toggle("active");
+        });
+    });
+
+    document.querySelector('.nav-phone .close-btn').addEventListener('click', function() {
+        document.querySelector('.nav-phone').classList.remove('active');
     });
 </script>
 </body>
