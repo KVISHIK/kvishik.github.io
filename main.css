@@ -1,3 +1,10 @@
+@media (max-width: 1380px){
+    .content-t-one .container .characteristics{
+        top: 80%;
+    }
+}
+
+
 @media (max-width: 1180px) {
     header nav, .vrap .nav-t-al {
         width: 90%;
@@ -13,6 +20,7 @@
         justify-content: normal;
         gap: 10px;
     }
+
 }
 
 @media (max-width: 1113px) {
@@ -82,6 +90,15 @@
         width: 1030px;
         opacity: 1;
         transform: translateX(0);
+    }
+    .content-t-one .container .info{
+        flex-direction: column;
+    }
+    .content-t-one .container .info button{
+margin-left: 0;
+    }
+    .info .title .wrap.visible{
+        margin-bottom: 50px;
     }
 }
 
@@ -169,6 +186,7 @@
          width: 95%;
         margin: 0;
     }
+
 }
 
 @media (max-width: 1051px) {
@@ -217,6 +235,7 @@
     .activities .highlight {
         margin-bottom: 15px;
     }
+
 }
 
 @media (max-width: 959px) {
