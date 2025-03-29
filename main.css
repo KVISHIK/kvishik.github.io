@@ -181,7 +181,7 @@
 
     .content-t-al .tomato-hybrids p {
         font-size: 14px;
-        width: 85%;
+        width: 80%;
     }
 
     .breeding-info .container .breeding-card h3 {
@@ -313,7 +313,7 @@
     .content-t-al .tomato-hybrids .text p {
 
         font-size: 14px;
-        width: 55%;
+        width: 50%;
         margin-bottom: 30px;
     }
 
@@ -547,7 +547,7 @@
     }
 
     .hero {
-        padding: 220px 0;
+        padding: 150px 0;
     }
 
     footer .nav {
@@ -661,6 +661,25 @@
     .contact {
         background-position: center 90px;
     }
+    .variety-catalog .container a {
+        width: 340px;
+    }
+    .variety-catalog .container{
+        width: 340px;
+    }
+    .variety-catalog {
+        width: 640px;
+    }
+    .breeding-info .container .breeding-card p {
+        font-size: 12px;
+    }
+    .breeding-info .container .breeding-card h3 {
+        font-size: 15px;
+        margin-bottom: 18px;
+    }
+    .breeding-info .container .breeding-card {
+        width: 95%;
+    }
 }
 
 @media (max-width: 672px) {
@@ -696,6 +715,7 @@
     .contact {
         background-position: center 130px;
     }
+
 }
 
 
@@ -725,7 +745,7 @@
     }
 
     .content-t-al .tomato-hybrids {
-        padding-left: 10px;
+        padding-left: 20px;
     }
 
     .content-t-al .tomato-hybrids h2 {
@@ -845,6 +865,9 @@
         line-height: 1.5em;
         font-size: 12px;
     }
+    .hero {
+        padding: 100px 0;
+    }
 }
 
 @media (max-width: 394px) {
@@ -880,6 +903,53 @@
     }
 
     .vision-mission .mission {
+        width: 320px;
+    }
+    .info .title .wrap.visible{
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+    .content-t-one .info .wrapper-img .wrap img{
+        width: 270px;
+        height: 270px;
+    }
+    .content-t-one .container .info button{
+        height: 48px;
+        width: 200px;
+        font-size: 15px;
+    }
+    .content-t-one .container .info button img{
+        height: 28px;
+        width: 28px;
+
+    }
+    .variety-catalog .tomato-card{
+        width: 330px;
+    }
+    .variety-catalog .tomato-card img{
+        width: 340px;
+        height: 232px;
+    }
+    .variety-catalog{
+        width: 340px;
+    }
+    .variety-catalog p{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 354px) {
+    .variety-catalog .tomato-card{
+        width: 300px;
+    }
+    .variety-catalog .tomato-card img{
+        width: 330px;
+        height: 232px;
+    }
+    .variety-catalog p{
+        font-size: 12px;
+    }
+    .content-t-al .variety-catalog{
         width: 320px;
     }
 }
