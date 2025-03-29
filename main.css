@@ -1,9 +1,10 @@
-@media (max-width: 1550px){
-    .content-con .container .contact-form{
+@media (max-width: 1550px) {
+    .content-con .container .contact-form {
         display: block;
 
     }
-    .content-con .container .contact-for{
+
+    .content-con .container .contact-for {
         margin: auto;
         padding-left: 0;
     }
@@ -103,11 +104,13 @@
         opacity: 1;
         transform: translateX(0);
     }
-    .content-t-one .container{
+
+    .content-t-one .container {
         padding-left: 10px;
         overflow: hidden;
         width: 95%;
     }
+
     .content-t-one .container .info {
         flex-direction: column;
         width: 800px;
@@ -127,7 +130,8 @@
         position: relative;
         margin-bottom: 30px;
     }
-    .content-t-one .info .title h1{
+
+    .content-t-one .info .title h1 {
         font-size: 40px;
         width: 800px;
     }
@@ -271,20 +275,30 @@
     }
 
 }
-@media (max-width: 1024px){
-    .tomato-all,.contact {
 
-        height: 302px;
+@media (max-width: 1024px) {
+    .contact {
+        height: 490px;
+        background-size: 100% auto;
+        background-position: center -20px;
+        background-repeat: no-repeat;
+    }
+
+    .tomato-all {
+
+        height: 490px;
         background-size: 100% auto;
         background-position: center -80px;
         background-repeat: no-repeat;
 
     }
-    .content-t-al .tomato-hybrids p.highlight{
+
+    .content-t-al .tomato-hybrids p.highlight {
         text-align: center;
         margin-bottom: 10px;
     }
 }
+
 @media (max-width: 959px) {
     .content-t-al .tomato-hybrids {
         overflow: hidden;
@@ -518,7 +532,8 @@
     .vision-mission .mission p {
         font-size: 15px;
     }
-    .vision-mission .text{
+
+    .vision-mission .text {
         margin-bottom: 20px;
     }
 
@@ -545,9 +560,10 @@
     }
 
 
-    .content-con .container .contact-for{
+    .content-con .container .contact-for {
         width: 85%;
     }
+
     .wrap-nav {
         display: grid;
         grid-template-columns: 1fr auto;
@@ -583,8 +599,17 @@
         margin-top: 30px;
 
     }
+
     .vision-mission .text {
         text-align: center;
+    }
+
+    .tomato-all, .contact {
+        background-position: center 10px;
+    }
+
+    .contact {
+        background-position: center 80px;
     }
 }
 
@@ -595,63 +620,91 @@
         max-width: 740px;
     }
 }
-@media (max-width: 787px){
-    .content-t-one .info .title h1{
+
+@media (max-width: 787px) {
+    .content-t-one .info .title h1 {
         width: 600px;
         margin-bottom: 30px;
     }
-    .content-t-one .characteristics .container .wrap{
+
+    .content-t-one .characteristics .container .wrap {
         grid-template-columns: auto;
     }
-    .content-t-one .info .wrapper-img .wrap img{
+
+    .content-t-one .info .wrapper-img .wrap img {
         width: 320px;
         height: 320px;
     }
-    .content-t-one .info .wrap{
+
+    .content-t-one .info .wrap {
         font-size: 25px;
         gap: 10px;
     }
-    .content-t-one .info .wrap img{
+
+    .content-t-one .info .wrap img {
         height: 60px;
         width: 60px;
     }
-    .content-t-one .characteristics h3{
+
+    .content-t-one .characteristics h3 {
         font-size: 17px;
     }
-    .content-t-one .characteristics .container .wrap li{
+
+    .content-t-one .characteristics .container .wrap li {
         font-size: 15px;
     }
 
+    .tomato-all, .contact {
+        background-position: center 50px;
+    }
+
+    .contact {
+        background-position: center 90px;
+    }
 }
 
-@media (max-width: 672px){
-    .content-con .container .contact-form textarea{
+@media (max-width: 672px) {
+    .content-con .container .contact-form textarea {
         width: 400px;
         margin-bottom: 40px;
     }
-    .content-con .container .contact-form .other-input{
+
+    .content-con .container .contact-form .other-input {
         width: 400px;
     }
-    .content-con .container .contact-form select{
+
+    .content-con .container .contact-form select {
         width: 400px;
     }
-    .content-con .container .contact-form .wrap-captcha{
+
+    .content-con .container .contact-form .wrap-captcha {
         display: block;
     }
-    .content-con .container .contact-form .wrap-captcha img{
+
+    .content-con .container .contact-form .wrap-captcha img {
         margin-bottom: 20px;
     }
-    .content-con .container .contact-for{
+
+    .content-con .container .contact-for {
         width: 85%;
+    }
+
+    .tomato-all, .contact {
+        background-position: center 80px;
+    }
+
+    .contact {
+        background-position: center 130px;
     }
 }
 
 
 @media (max-width: 632px) {
-    .content-t-one .info .title h1{
+    .content-t-one .info .title h1 {
         width: 300px;
         margin-bottom: 30px;
     }
+
     .activities .activities-categories {
         display: block;
     }
@@ -706,79 +759,127 @@
     .breeding-info .container .breeding-card {
         margin-bottom: 50px;
     }
-    .content-con .container .contact-for{
+
+    .content-con .container .contact-for {
         width: 85%;
         margin: 0;
         margin-left: 10px;
     }
-    .tomato-all,.contact {
-        background-position: center -20px;
+
+    .tomato-all, .contact {
+        background-position: center 140px;
     }
+
     .contact {
-        background-position: center 60px;
+        background-position: center 170px;
     }
 }
 
-@media (max-width: 552px){
+@media (max-width: 552px) {
 
-    .categories{
+    .categories .categories-card {
+        margin-bottom: 30px;
+    }
+
+    .categories {
         display: block;
+
+    }
+
+    .tomato-all, .contact {
+        background-position: center 160px;
+    }
+
+    .contact {
+        background-position: center 220px;
     }
 }
-@media (max-width: 496px){
-    .tomato-all,.contact {
-        background-position: center 40px;
-    }
-    .vision-mission .text{
+
+@media (max-width: 502px) {
+
+    .vision-mission .text {
         text-align: center;
     }
-}
-@media (max-width: 429px){
-    .content-con .container .contact-form textarea{
-        width: 350px;
-    }
-    .content-con .container .contact-form .other-input{
-        width: 350px;
-    }
-    .content-con .container .contact-form select{
-        width: 350px;
-    }
-    .content-con .container .contact-for{
 
-    }
-    .tomato-all{
-        background-position: center 100px;
+    .tomato-all {
+        background-position: center 200px;
     }
     .contact {
-        background-position: center 120px;
+        background-position: center 230px;
     }
-    .content-t-al .tomato-hybrids .text p{
+
+}
+
+@media (max-width: 434px) {
+    .content-con .container .contact-form textarea {
+        width: 350px;
+    }
+
+    .content-con .container .contact-form .other-input {
+        width: 350px;
+    }
+
+    .content-con .container .contact-form select {
+        width: 350px;
+    }
+
+    .content-con .container .contact-for {
+
+    }
+
+    .tomato-all, .contact {
+        background-position: center 220px;
+        height: 400px;
+    }
+
+    .contact {
+        background-position: center 230px;
+    }
+
+    .content-t-al .tomato-hybrids .text p {
         width: 24%;
     }
-    footer ul{
-        display:block ;
+
+    footer ul {
+        display: block;
         line-height: 1.5em;
         font-size: 12px;
     }
 }
 
-@media (max-width: 429px){
-    .vision-mission{
-
+@media (max-width: 394px) {
+    .content-con .container .contact-form input {
+        width: 300px;
     }
-    .vision-mission .text{
+
+    .content-con .container .contact-form select {
+        width: 300px;
+    }
+
+    .content-con .container .contact-form .other-input {
+        width: 300px;
+    }
+
+    .content-con .container .contact-form textarea {
+        width: 300px;
+    }
+
+    .vision-mission .text {
         width: 80%;
     }
-    .vision-mission .vision{
+
+    .vision-mission .vision {
         margin-bottom: 30px;
         width: 320px;
 
     }
+
     .vision-mission img {
         height: 250px;
         width: 250px;
     }
-    .vision-mission .mission{
+
+    .vision-mission .mission {
         width: 320px;
     }
 }
