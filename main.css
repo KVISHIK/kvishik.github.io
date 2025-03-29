@@ -1,5 +1,16 @@
-@media (max-width: 1380px){
-    .content-t-one .container .characteristics{
+@media (max-width: 1550px){
+    .content-con .container .contact-form{
+        display: block;
+
+    }
+    .content-con .container .contact-for{
+        margin: auto;
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 1380px) {
+    .content-t-one .container .characteristics {
         top: 80%;
     }
 }
@@ -67,10 +78,11 @@
 }
 
 @media (max-width: 1114px) {
-.variety-catalog{
-    width: 740px;
-    overflow: hidden;
-}
+    .variety-catalog {
+        width: 740px;
+        overflow: hidden;
+    }
+
     .vision-mission {
 
     }
@@ -91,14 +103,33 @@
         opacity: 1;
         transform: translateX(0);
     }
-    .content-t-one .container .info{
+    .content-t-one .container{
+        padding-left: 10px;
+        overflow: hidden;
+        width: 95%;
+    }
+    .content-t-one .container .info {
         flex-direction: column;
+        width: 800px;
+
     }
-    .content-t-one .container .info button{
-margin-left: 0;
+
+    .content-t-one .container .info button {
+        margin-left: 0;
     }
-    .info .title .wrap.visible{
+
+    .info .title .wrap.visible {
         margin-bottom: 50px;
+    }
+
+    .content-t-one .container .characteristics {
+
+        position: relative;
+        margin-bottom: 30px;
+    }
+    .content-t-one .info .title h1{
+        font-size: 40px;
+        width: 800px;
     }
 }
 
@@ -178,12 +209,14 @@ margin-left: 0;
         margin: auto;
         overflow: hidden;
     }
-    .variety-catalog .container a{
+
+    .variety-catalog .container a {
         overflow: hidden;
     }
+
     .content-t-al .tomato-hybrids {
         overflow: hidden;
-         width: 95%;
+        width: 95%;
         margin: 0;
     }
 
@@ -255,7 +288,8 @@ margin-left: 0;
         width: 55%;
         margin-bottom: 30px;
     }
-    .content-t-al .tomato-hybrids .text{
+
+    .content-t-al .tomato-hybrids .text {
 
     }
 
@@ -492,8 +526,12 @@ margin-left: 0;
         align-items: center;
         gap: 20px;
     }
+
     .tomato-all {
         background-position: -350px -540px;
+    }
+    .content-con .container .contact-for{
+        width: 85%;
     }
 }
 
@@ -504,8 +542,63 @@ margin-left: 0;
         max-width: 740px;
     }
 }
+@media (max-width: 787px){
+    .content-t-one .info .title h1{
+        width: 600px;
+        margin-bottom: 30px;
+    }
+    .content-t-one .characteristics .container .wrap{
+        grid-template-columns: auto;
+    }
+    .content-t-one .info .wrapper-img .wrap img{
+        width: 320px;
+        height: 320px;
+    }
+    .content-t-one .info .wrap{
+        font-size: 25px;
+        gap: 10px;
+    }
+    .content-t-one .info .wrap img{
+        height: 60px;
+        width: 60px;
+    }
+    .content-t-one .characteristics h3{
+        font-size: 17px;
+    }
+    .content-t-one .characteristics .container .wrap li{
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 672px){
+    .content-con .container .contact-form textarea{
+        width: 400px;
+        margin-bottom: 40px;
+    }
+    .content-con .container .contact-form .other-input{
+        width: 400px;
+    }
+    .content-con .container .contact-form select{
+        width: 400px;
+    }
+    .content-con .container .contact-form .wrap-captcha{
+        display: block;
+    }
+    .content-con .container .contact-form .wrap-captcha img{
+        margin-bottom: 20px;
+    }
+    .content-con .container .contact-for{
+        width: 85%;
+    }
+}
+
 
 @media (max-width: 632px) {
+    .content-t-one .info .title h1{
+        width: 300px;
+        margin-bottom: 30px;
+    }
     .activities .activities-categories {
         display: block;
     }
@@ -514,17 +607,21 @@ margin-left: 0;
         margin-left: 10px;
         width: 350px;
     }
-    .variety-catalog .container a{
+
+    .variety-catalog .container a {
         width: 350px;
     }
-    .variety-catalog .description{
+
+    .variety-catalog .description {
         text-align: left;
         width: 350px;
         margin-bottom: 20px;
     }
+
     .content-t-al .tomato-hybrids {
         padding-left: 10px;
     }
+
     .content-t-al .tomato-hybrids h2 {
         font-size: 24px;
         margin-bottom: 28px;
@@ -535,20 +632,44 @@ margin-left: 0;
         width: 29%;
         margin-bottom: 26px;
     }
-    .content-t-al .tomato-hybrids br{
+
+    .content-t-al .tomato-hybrids br {
         display: block;
     }
-    .content-t-al .tomato-hybrids .text{
+
+    .content-t-al .tomato-hybrids .text {
         overflow: hidden;
     }
-    .content-t-al .variety-catalog{
+
+    .content-t-al .variety-catalog {
         width: 350px;
     }
-    .breeding-info .container{
+
+    .breeding-info .container {
         display: block;
 
     }
-    .breeding-info .container .breeding-card{
+
+    .breeding-info .container .breeding-card {
         margin-bottom: 50px;
+    }
+    .content-con .container .contact-for{
+        width: 85%;
+        margin: 0;
+        margin-left: 10px;
+    }
+}
+@media (max-width: 429px){
+    .content-con .container .contact-form textarea{
+        width: 350px;
+    }
+    .content-con .container .contact-form .other-input{
+        width: 350px;
+    }
+    .content-con .container .contact-form select{
+        width: 350px;
+    }
+    .content-con .container .contact-for{
+
     }
 }

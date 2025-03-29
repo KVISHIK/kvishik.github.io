@@ -900,7 +900,7 @@ header label {
 
 .content-con .container .contact-for {
     width: 900px;
-    margin: auto;
+    margin: 0 0 0 400px;
 }
 
 .content-con .container .contact-for h1 {
