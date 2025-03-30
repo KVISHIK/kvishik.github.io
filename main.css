@@ -936,6 +936,10 @@
     .variety-catalog p{
         font-size: 13px;
     }
+    .content-con .container .contact-form p{
+        width: 90%;
+    }
+
 }
 
 @media (max-width: 354px) {

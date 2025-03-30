@@ -926,7 +926,7 @@ header label {
 
 .contact-form .column {
     flex: 1;
-    min-width: 360px;
+    min-width: 310px;
 }
 
 .contact-form label,
