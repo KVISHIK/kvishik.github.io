@@ -95,17 +95,23 @@
                     <div class="wrap">
                         <img :src="product.image" alt="">
                     </div>
-                    <button><img src="img/t-one/ico_pdf.svg" alt=""><span>Download pdf</span></button>
+                    <button v-if="cartBtnText === 'Add to Cart'" @click="addToCart(product.id)">
+                        <img src="img/t-one/basket.svg" alt="Add to Cart" style="width: 40px"> Add to Cart
+                    </button>
+                    <button v-if="cartBtnText === 'Go to Cart'" @click="goToCart">
+                        Go to Cart
+                    </button>
                 </div>
             </div>
             <div class="characteristics">
                 <h3>CHARACTERISTICS</h3>
                 <div class="wrap-ul">
-                    <ul v-for="res in product.characteristics.resistance">
-                        <li>{{ res }}</li>
+                    <ul v-if="product && product.characteristics && product.characteristics.resistance && product.characteristics.resistance.length">
+                        <li v-for="res in product.characteristics.resistance">{{ res }}</li>
                     </ul>
                 </div>
             </div>
+
         </div>
         <div class="characteristics">
             <div class="container">

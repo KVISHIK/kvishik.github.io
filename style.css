@@ -887,6 +887,81 @@ header label {
 
 /*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-**/
 
+table{
+    display: flex;
+    flex-direction:column;
+    max-width: 1127px;
+    width:100%;
+    font-size: 17px;
+    margin-bottom: 30px;
+
+}
+
+
+tbody{
+    font-family: "Roboto Slab", serif;
+    padding: 10px;
+
+    width: 55%;
+    border-radius: 20px;
+    color: #324950;
+}
+thead tr{
+    margin-bottom: 20px;
+    font-size: 20px;
+    background: none;
+    border-radius: 0;
+    border: none;
+}
+tbody img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    object-fit: cover;
+    border-right: 3px solid #979797;
+
+}
+tr{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-weight: 500;
+   background: #eaeaea;
+    border-radius:  40px 10px 40px 10px;
+    overflow: hidden;
+    border: 1px solid #cccccc;
+    margin-bottom: 20px;
+}
+tbody button {
+    text-align: center;
+    font-size: 30px;
+    color: #EB5757;
+    background: none;
+    border: none;
+}
+.cart{
+    margin-bottom: 30px;
+}
+.order-placed{
+    font-size: 20px;
+    font-family: "Roboto Slab", serif;
+    text-align: center;
+    margin: 0 0 0 410px;
+    width: 300px;
+}
+.order-placed p{
+    font-weight: 400;
+    color: #324950;
+    margin-bottom: 20px;
+
+}
+.order-placed h2{
+    font-size: 44px;
+    font-weight: 700;
+    color: #324950;
+    margin-bottom: 20px;
+
+}
 
 .contact {
     background: url("img/contact/bg.png");
@@ -895,7 +970,7 @@ header label {
 }
 
 .content-con .container .highlight {
-    margin-bottom: 58px;
+    margin-bottom: 40px;
 }
 
 .content-con .container {

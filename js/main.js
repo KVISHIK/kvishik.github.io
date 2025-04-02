@@ -111,7 +111,12 @@ new Vue({
             }
         ],
         product: {},
-        btnVisible: 0
+        cart: {},
+        btnVisible: 0,
+        cartBtnText: "Add to Cart",
+        cartPageLink: "contact.html",
+        orderPlaced: false,
+        contactFields: { name: '', telephone: '', email: '', message: '', captcha: '' }
     },
     methods: {
         getProduct() {
@@ -119,23 +124,54 @@ new Vue({
             const foundProduct = this.products.find(p => p.id == productId);
             if (foundProduct) {
                 this.product = foundProduct;
+            } else {
+                this.product = {};
             }
             this.checkInCart();
         },
         addToCart(id) {
-            let cart = JSON.parse(localStorage.getItem('cart')) || {};
-            if (!cart[id]) {
-                cart[id] = 1;
-                localStorage.setItem('cart', JSON.stringify(cart));
-                this.btnVisible = 1;
+            const product = this.products.find(p => p.id == id);
+            if (product) {
+                this.cart[id] = { ...product, quantity: (this.cart[id]?.quantity || 0) + 1 };
+                localStorage.setItem('cart', JSON.stringify(this.cart));
+                this.cartBtnText = "Go to Cart";
             }
         },
         checkInCart() {
-            let cart = JSON.parse(localStorage.getItem('cart')) || {};
-            this.btnVisible = cart[this.product.id] ? 1 : 0;
+            try {
+                this.cart = JSON.parse(localStorage.getItem('cart')) || {};
+            } catch (e) {
+                console.error("Error parsing cart from localStorage:", e);
+                this.cart = {};
+            }
+
+            if (this.product.id && this.cart[this.product.id]) {
+                this.cartBtnText = "Go to Cart";
+            }
+        },
+        goToCart() {
+            window.location.href = this.cartPageLink;
+        },
+        removeFromCart(id) {
+            Vue.delete(this.cart, id);
+            localStorage.setItem('cart', JSON.stringify(this.cart));
+        },
+        makeOrder() {
+
+            this.cart = {};
+            localStorage.removeItem('cart');
+            this.orderPlaced = true;
+        },
+        submitForm() {
+
+            if (!this.contactFields.name || !this.contactFields.telephone || !this.contactFields.email || !this.contactFields.message || !this.contactFields.captcha) {
+                return;
+            }
+            this.makeOrder();
         }
     },
     mounted() {
+        this.checkInCart();
         this.getProduct();
     }
 });

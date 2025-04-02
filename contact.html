@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="main.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="js/main.js" defer></script>
     <title>Contact us</title>
 </head>
 <body>
@@ -33,7 +35,7 @@
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="">Company Profile</a></li>
-            <li><a href="apple_all.html">Products</a></li>
+            <li><a href="tomato_all.html">Products</a></li>
             <li><a href="">Services</a></li>
             <li><a href="">R & D</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -74,14 +76,43 @@
 </header>
 <main>
     <div class="content-con">
-        <div class="container">
+
+        <div class="container" id="app">
+
             <div class="contact-for">
+
                 <h1>Contact us</h1>
                 <p class="highlight">*****</p>
-                <form class="contact-form">
+                <!-- Корзина -->
+
+
+                <div v-if="!orderPlaced">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Cart</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr v-for="item in cart" :key="item.id">
+                            <td><img :src="item.image" width="50"></td>
+                            <td>{{ item.title }} |</td>
+                            <td>{{ item.short_text }}</td>
+                            <td>
+                                <button @click="removeFromCart(item.id)">✗</button>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="cart" v-if="Object.keys(cart).length === 0">
+                        <p>Your cart is empty.</p>
+                    </div>
+                </div>
+
+                <form class="contact-form" @submit.prevent="makeOrder" v-if="!orderPlaced">
                     <div class="column">
                         <p>Name *</p>
-                        <label><input type="text" required></label>
+                        <label><input type="text" v-model="contactFields.name" required></label>
 
                         <p>Company Name</p>
                         <label><input type="text"></label>
@@ -99,7 +130,7 @@
                         <label><input type="tel"></label>
 
                         <p>Email *</p>
-                        <label><input type="email" required></label>
+                        <label><input type="email" v-model="contactFields.email" required></label>
                     </div>
 
                     <div class="column">
@@ -117,19 +148,28 @@
                         <label><input class="other-input" type="text"></label>
 
                         <p>You are interested in</p>
-                        <label><textarea></textarea></label>
+                        <label><textarea v-model="contactFields.message"></textarea></label>
 
                         <p>Please type this code</p>
                         <div class="wrap-captcha">
                             <img src="img/contact/captcha.png" alt="captcha">
                             <label>
-                                <input type="text" class="small-input">
+                                <input type="text" class="small-input" required>
                             </label>
+                            <div class="" v-if="Object.keys(cart).length > 0 && !orderPlaced">
+                                <button type="submit" class="button" @click="submitForm">Send Message</button>
 
-                            <button type="submit" class="button">Send Message</button>
+                            </div>
+
                         </div>
                     </div>
                 </form>
+                <div class="order-placed" v-if="orderPlaced">
+                    <h2>Thanks for your order!</h2>
+                    <p>Name: {{ contactFields.name }}</p>
+                    <p>Email: {{ contactFields.email }}</p>
+                    <p>Message: {{ contactFields.message }}</p>
+                </div>
             </div>
         </div>
         <div class="our-address">
@@ -179,7 +219,7 @@
         });
     });
 
-    document.querySelector('.nav-phone .close-btn').addEventListener('click', function() {
+    document.querySelector('.nav-phone .close-btn').addEventListener('click', function () {
         document.querySelector('.nav-phone').classList.remove('active');
     });
 </script>
