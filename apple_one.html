@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="main.css">
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
     <script src="js/main.js" defer></script>
-    <title>TAG 1002 (TAG 809)</title>
+    <title >Apple</title>
 </head>
 <body>
 <div class="nav-phone">
@@ -75,25 +75,25 @@
     </div>
 </header>
 <main>
-    <div class="content-t-one">
+    <div class="content-t-one" id="app">
 
-        <div class="container">
+        <div class="container" >
             <div class="wrap-a">
                 <a href="apple_all.html" class="return">⟵ Return to all tomatoes</a>
         </div>
             <div class="info">
                 <div class="title">
 
-                    <h1>TAG 1002 (TAG 809) <span>Tomato Determinate Red Standard Round</span></h1>
+                    <h1>{{ product.title }} </h1>
                     <p class="highlight">*****</p>
-                    <div class="wrap">
-                        <img src="img/t-one/tomato_sticker.png" alt="">
-                        <p>Very high yield and <br>excellent fruits quality!</p>
+                    <div class="wrap visible" style="">
+                        <img src="img/t-one/apple_sticker.png" alt="">
+                        <p>{{ product.desc }}</p>
                     </div>
                 </div>
                 <div class="wrapper-img">
                     <div class="wrap">
-                        <img src="img/t-one/tomato.png" alt="">
+                        <img :src="product.image" alt="">
                     </div>
                     <button><img src="img/t-one/ico_pdf.svg" alt=""><span>Download pdf</span></button>
                 </div>
@@ -101,10 +101,8 @@
             <div class="characteristics">
                 <h3>CHARACTERISTICS</h3>
                 <div class="wrap-ul">
-                    <ul>
-                        <li><span>Resistance</span></li>
-                        <li>HR: ToMV:0-2; Fol: 1,2; Ve/Vd;</li>
-                        <li>IR: TYLCV</li>
+                    <ul v-for="res in product.characteristics.resistance">
+                        <li>{{ res }}</li>
                     </ul>
                 </div>
             </div>
@@ -114,39 +112,25 @@
                 <div class="wrap">
                     <div class="item">
                         <h3>Plant</h3>
-                        <div class="wrap-ul">
-                            <ul>
-                                <li>Strong vigor that provides good leaf coverage.</li>
-                                <li>Very high productivity with good fruit setting.</li>
-                                <li>Early matured variety.</li>
-                            </ul>
-                        </div>
+                        <ul>
+                            <li v-for="item in product.characteristics.plant">{{ item }}</li>
+                        </ul>
                     </div>
                     <div class="item">
                         <h3>Cycle</h3>
-                        <div class="wrap-ul">
-                            <ul>
-                                <li>Spring</li>
-                                <li>Fall</li>
-                                <li>Winter</li>
-                            </ul>
-                        </div>
+                        <ul>
+                            <li v-for="season in product.characteristics.cycle">{{ season }}</li>
+                        </ul>
                     </div>
                     <div class="item">
                         <h3>Fruit</h3>
-                        <div class="wrap-ul">
-                            <ul>
-                                <li>Long shelf life on plant and post harvest.</li>
-                                <li>Nice shiny attractive deep red color.</li>
-                                <li>Average fruit size: 140 – 160 grams.</li>
-                            </ul>
-                        </div>
+                        <ul>
+                            <li v-for="fruit in product.characteristics.fruit">{{ fruit }}</li>
+                        </ul>
                     </div>
                     <div class="item">
                         <h3>Color</h3>
-                        <div class="wrap-ul">
-                            <p>Red</p>
-                        </div>
+                        <p>{{ product.characteristics.color }}</p>
                     </div>
                 </div>
             </div>

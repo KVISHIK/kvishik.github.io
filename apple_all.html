@@ -127,12 +127,14 @@
             <div class="container" id="app">
 
                 <div class="tomato-card" v-for="product in products" :key="product.id">
-                    <a href="">
+                    <a :href="'apple_one.html#' + product.id">
                         <div class="container">
                             <img :src="product.image" alt="">
                         </div>
-                        <div class="text"><h3> {{product.title }}</h3>
-                            <p>{{ product.short_text }}</p></div>
+                        <div class="text">
+                            <h3>{{ product.title }}</h3>
+                            <p>{{ product.short_text }}</p>
+                        </div>
                     </a>
                 </div>
 
