@@ -916,6 +916,7 @@ thead tr{
 
 tr .line{
     border-right: 1px solid #324950;
+    padding-right: 8px;
 }
 tbody img {
     width: 80px;
