@@ -96,10 +96,10 @@
                         <tbody>
                         <tr v-for="item in cart" :key="item.id">
                             <td><img :src="item.image" width="50"></td>
-                            <td>{{ item.title }} |</td>
+                            <td class="line">{{ item.title }} </td>
                             <td>{{ item.short_text }}</td>
                             <td>
-                                <button @click="removeFromCart(item.id)">✗</button>
+                                <button @click="removeFromCart(item.id)">−</button>
                             </td>
                         </tr>
                         </tbody>
